@@ -27,7 +27,7 @@ app.use(express.static(__dirname + '/views'));
 
 app.get('/',(req,res)=>{
     res.render("home.hbs", {
-        pagteTitle: "G-Men + Hüso Katalog",
+        pageTitle: "G-Men + Hüso Katalog",
         welcomeMessage: "Buradan bütün orospu çocuklarını inceleyebilirsiniz, linkler güncellendikçe eklenecektir."
     });
 });
