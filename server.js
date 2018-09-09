@@ -1,5 +1,6 @@
 var express = require('express');
 var fs = require('fs');
+const port = process.env.PORT || 3001;
 
 var app = express();
 
@@ -27,4 +28,6 @@ app.get('/',(req,res)=>{
     TOLGANIN AMK");
 });
 
-app.listen(3001);
+app.listen(port,()=>{
+    console.log(`Server is up on port ${port}`);
+});
